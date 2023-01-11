@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">ksiazkatelefoniczna</string>
+    <string name="usu_rekord">Usuń</string>
+    <string name="baza_danych">Ksiazka telefoniczna</string>
+    <string name="dodaj_rekord">Dodaj rekord</string>
+    <string name="wyszukaj">Wyszukaj</string>
+    <string name="avatar">avatar</string>
+    <string name="imie">Imie:</string>
+    <string name="nazwisko">Nazwisko:</string>
+    <string name="miejscowo">Miejscowość:</string>
+    <string name="todo">TODO</string>
+    <string name="numer">Numer:</string>
+    <string name="zmie_dane">Zmień dane</string>
+    <string name="zmie_zdj_cie">Zmień zdjęcie</string>
+</resources>
