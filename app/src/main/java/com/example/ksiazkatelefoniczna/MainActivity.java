@@ -8,15 +8,17 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
-    protected static final String DB_NAME = "database_name";
+    protected static final String DB_NAME = "baza_danych";
     protected static final String TABLE_NAME = "osoby";
 
     protected SQLiteDatabase mDb;
@@ -40,6 +42,13 @@ public class MainActivity extends AppCompatActivity {
         values.put("phone", "123456798");
         mDb.insert(TABLE_NAME,null, values);*/
 
+        Button AddRecord = findViewById(R.id.dodaj);
+        AddRecord.setOnClickListener(view -> {
+            Intent intentMain = new Intent(MainActivity.this,
+                    Add.class);
+            MainActivity.this.startActivity(intentMain);
+        });
+
         // Wyświetlanie danych z bazy danych w tabeli
         showDataInTable();
     }
@@ -47,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
     // Metoda wyświetlająca dane z bazy danych w tabeli
     protected void showDataInTable() {
         TableLayout table = findViewById(R.id.table);
-        table.removeAllViews();
+        table.removeAllViewsInLayout();
 
         // Pobieranie danych z bazy danych
         Cursor cursor = mDb.query(TABLE_NAME, null, null, null, null, null, null);
@@ -100,8 +109,15 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @Override
+    public void onWindowFocusChanged(boolean hasFocus) {
+        if (hasFocus) showDataInTable();
+        super.onWindowFocusChanged(hasFocus);
+    }
+
+    @Override
     protected void onDestroy() {
         super.onDestroy();
         mDb.close();
     }
+
 }

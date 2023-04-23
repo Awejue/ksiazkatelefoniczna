@@ -48,26 +48,20 @@
                 android:text="@string/imie"
                 android:textSize="16sp" />
 
-            <TextView
-                android:id="@+id/name"
+            <EditText
+                android:id="@+id/aName"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_margin="10dp"
                 android:layout_weight="1"
-                android:textAlignment="center"
-                android:textSize="30sp" />
-
-            <EditText
-                android:id="@+id/eName"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_margin="10dp"
-                android:layout_weight="2"
                 android:autofillHints=""
+                android:hint="@string/imie"
                 android:inputType="text"
                 android:textAlignment="center"
+                android:textColorHint="#78909C"
                 android:textSize="30sp"
-                android:visibility="gone" />
+                android:visibility="visible"
+                tools:ignore="DuplicateSpeakableTextCheck" />
         </LinearLayout>
 
         <LinearLayout
@@ -84,26 +78,20 @@
                 android:text="@string/nazwisko"
                 android:textSize="16sp" />
 
-            <TextView
-                android:id="@+id/last_name"
+            <EditText
+                android:id="@+id/aLastName"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_margin="10dp"
                 android:layout_weight="1"
-                android:textAlignment="center"
-                android:textSize="30sp" />
-
-            <EditText
-                android:id="@+id/eLastName"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_margin="10dp"
-                android:layout_weight="2"
                 android:autofillHints=""
+                android:hint="@string/nazwisko"
                 android:inputType="text"
                 android:textAlignment="center"
+                android:textColorHint="#78909C"
                 android:textSize="30sp"
-                android:visibility="gone" />
+                android:visibility="visible"
+                tools:ignore="DuplicateSpeakableTextCheck" />
         </LinearLayout>
 
         <LinearLayout
@@ -120,26 +108,20 @@
                 android:text="@string/miejscowo"
                 android:textSize="16sp" />
 
-            <TextView
-                android:id="@+id/city"
+            <EditText
+                android:id="@+id/aCity"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_margin="10dp"
                 android:layout_weight="1"
-                android:textAlignment="center"
-                android:textSize="30sp" />
-
-            <EditText
-                android:id="@+id/eCity"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_margin="10dp"
-                android:layout_weight="2"
                 android:autofillHints=""
+                android:hint="@string/miejscowo"
                 android:inputType="text"
                 android:textAlignment="center"
-                android:textSize="30sp"
-                android:visibility="gone" />
+                android:textColorHint="#78909C"
+                android:textSize="28sp"
+                android:visibility="visible"
+                tools:ignore="DuplicateSpeakableTextCheck" />
         </LinearLayout>
 
         <LinearLayout
@@ -156,26 +138,20 @@
                 android:text="@string/numer"
                 android:textSize="16sp" />
 
-            <TextView
-                android:id="@+id/number"
+            <EditText
+                android:id="@+id/aNumber"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_margin="10dp"
                 android:layout_weight="1"
-                android:textAlignment="center"
-                android:textSize="30sp" />
-
-            <EditText
-                android:id="@+id/eNumber"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_margin="10dp"
-                android:layout_weight="2"
                 android:autofillHints=""
+                android:hint="@string/numer"
                 android:inputType="number"
                 android:textAlignment="center"
+                android:textColorHint="#78909C"
                 android:textSize="30sp"
-                android:visibility="gone" />
+                android:visibility="visible"
+                tools:ignore="DuplicateSpeakableTextCheck" />
         </LinearLayout>
 
         <Button
@@ -186,18 +162,7 @@
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:backgroundTint="#535353"
-            android:text="@string/zmie_dane"
-            android:textColor="#F8BBD0" />
-
-        <Button
-            android:id="@+id/changeImage"
-            style="?android:attr/buttonBarButtonStyle"
-            android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:backgroundTint="#535353"
-            android:text="@string/zmie_zdj_cie"
+            android:text="@string/dodaj_osobe"
             android:textColor="#F8BBD0" />
 
     </LinearLayout>
