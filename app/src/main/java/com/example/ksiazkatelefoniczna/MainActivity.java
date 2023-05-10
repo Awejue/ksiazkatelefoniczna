@@ -35,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
         // Tworzenie tabeli, jeśli nie istnieje
         mDb.execSQL("CREATE TABLE IF NOT EXISTS " + TABLE_NAME + " (id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT, last_name TEXT, country TEXT, phone TEXT, avatar BLOB)");
 
+
         /*ContentValues values = new ContentValues();
         values.put("name", "Aflonoanosnda");
         values.put("last_name", "Spien");

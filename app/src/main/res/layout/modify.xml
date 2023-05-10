@@ -15,20 +15,20 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <ImageView
+        <ImageButton
             android:id="@+id/back"
             android:layout_width="89dp"
-            android:layout_height="wrap_content"
+            android:layout_height="50dp"
             android:layout_margin="10dp"
             android:contentDescription="@string/todo"
+            android:src="@android:drawable/ic_menu_close_clear_cancel"
             android:textAlignment="viewStart"
-            app:srcCompat="@android:drawable/ic_menu_close_clear_cancel"
             tools:ignore="ImageContrastCheck" />
 
         <ImageView
             android:id="@+id/avatar"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="140dp"
             android:layout_margin="10dp"
             android:contentDescription="@string/avatar"
             tools:ignore="ImageContrastCheck"
@@ -198,6 +198,17 @@
             android:layout_marginRight="10dp"
             android:backgroundTint="#535353"
             android:text="@string/zmie_zdj_cie"
+            android:textColor="#F8BBD0" />
+
+        <Button
+            android:id="@+id/delete"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:backgroundTint="#535353"
+            android:text="@string/usu"
             android:textColor="#F8BBD0" />
 
     </LinearLayout>

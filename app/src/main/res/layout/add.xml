@@ -15,10 +15,10 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <ImageView
+        <ImageButton
             android:id="@+id/back"
             android:layout_width="89dp"
-            android:layout_height="wrap_content"
+            android:layout_height="50dp"
             android:layout_margin="10dp"
             android:contentDescription="@string/todo"
             android:textAlignment="viewStart"
@@ -28,7 +28,7 @@
         <ImageView
             android:id="@+id/avatar"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="140dp"
             android:layout_margin="10dp"
             android:contentDescription="@string/avatar"
             tools:ignore="ImageContrastCheck"
@@ -163,6 +163,17 @@
             android:layout_marginRight="10dp"
             android:backgroundTint="#535353"
             android:text="@string/dodaj_osobe"
+            android:textColor="#F8BBD0" />
+
+        <Button
+            android:id="@+id/addImage"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:backgroundTint="#535353"
+            android:text="@string/zmie_zdj_cie"
             android:textColor="#F8BBD0" />
 
     </LinearLayout>
